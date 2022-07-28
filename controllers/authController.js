@@ -81,7 +81,7 @@ exports.forgotPassword = catchAsync(async (req, res, next) => {
     "host"
   )}/users/resetPassword/${resetToken}`;
 
-  const message = `Forgot your password? Please link on the link below to reset your password.\n http://localhost:3000/reset/${resetToken}.\nIf you didn't forget your password, please ignore this email!`;
+  const message = `Forgot your password? Please link on the link below to reset your password.\n https://storyonhoops.netlify.app/reset/${resetToken}.\nIf you didn't forget your password, please ignore this email!`;
 
   try {
     await sendEmail({
